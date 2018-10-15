@@ -17,8 +17,8 @@ def readRows(inputCSV):
         keys = readCSV.fieldnames
         for row in readCSV:
             listOfOrderedDics.append(row)
-            for key in keys:
-                print(key, listOfOrderedDics[160][key], end=" ")
+        for key in keys:
+            print(key, listOfOrderedDics[160][key], end = " ")
 
 if __name__=="__main__":
                     csvToRead = argumentExists(1)

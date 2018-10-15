@@ -1,4 +1,5 @@
 import sys
+import csv
 
 def argumentExists(index):
     try:
@@ -14,10 +15,10 @@ def conversion(input, output):
     avengersdecoded = avengersdecoded.decode('ISO-8859-1')
     avengers.close()
     writeAvengers = open(output, 'w')
-    writeAvengers = write(avengersdecoded)
+    writeAvengers.write(avengersdecoded)
     writeAvengers.close()
 
-if _name_ == "__main__":
+if __name__ == "__main__":
     targetFile = argumentExists(1)
     resultFile = argumentExists(2)
     if targetFile and resultFile:
