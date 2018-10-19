@@ -15,6 +15,7 @@ def argumentexists(index):
         for row in readCSV:
             rows.append(row)
             print(rows[161])
+            print("ADFOSFOSFODSFOSFOSDF")
 
             if __name__ =="__main__":
                 csvToRead = argumentExists(1)
