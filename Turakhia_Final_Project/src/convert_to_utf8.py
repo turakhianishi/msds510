@@ -10,13 +10,13 @@ def argumentExists(index):
         return sys.argv[index]
 
 def conversion(input, output):
-    avengers = open(input, 'rb')
-    avengersdecoded = avengers.read()
-    avengersdecoded = avengersdecoded.decode('ISO-8859-1')
-    avengers.close()
-    writeAvengers = open(output, 'w')
-    writeAvengers.write(avengersdecoded)
-    writeAvengers.close()
+    biopics = open(input, 'rb')
+    biopicsdecoded = biopics.read()
+    biopicsdecoded = biopicsdecoded.decode('ISO-8859-1')
+    biopics.close()
+    writebiopics = open(output, 'w', encoding='UTF8')
+    writebiopics.write(biopicsdecoded)
+    writebiopics.close()
 
 if __name__ == "__main__":
     targetFile = argumentExists(1)
